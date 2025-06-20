@@ -7,18 +7,20 @@ import org.openqa.selenium.WebElement;
 
 import helper.Utility;
 
-public class JSDemo {
+public class JSDemo3 {
 
 	public static void main(String[] args) {
 		
-		WebDriver driver = Utility.startBrowser("Chrome", "https://login.yahoo.com/", false);
+		WebDriver driver = Utility.startBrowser("Chrome", "hhttps://freelance-learn-automation.vercel.app/login", false);
 		Utility.waitForSeconds(4);
-		driver.findElement(By.id("login-username")).sendKeys("avi@dlx.com");
 		
-		WebElement cb = driver.findElement(By.id("persistent"));
+		WebElement header = driver.findElement(By.className("header"));
+		
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()", cb);
 		
+		
+		Utility.waitForSeconds(3);
 		Utility.closeBrowser(driver);
 
 	}
