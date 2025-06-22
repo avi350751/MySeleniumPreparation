@@ -2,6 +2,8 @@ package helper;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -85,5 +87,24 @@ public class Utility {
 		
 		Select dropdown = new Select(element);
 		dropdown.selectByValue(valuetoselect);
+	}
+	
+	public static void clickElement(WebDriver driver, By locator) {
+		
+		try{
+			driver.findElement(locator).click();
+			System.out.println("Clicked - conventional method");
+		}
+		catch(Exception e) {
+			System.out.println("Clicking using javascript executor");
+			clickElementJS(driver,locator);
+		}
+	}
+	
+	public static void clickElementJS(WebDriver driver, By locator) {
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click()", driver.findElement(locator));
+		System.out.println("Clicked using JavascriptExecutor");
 	}
 }
