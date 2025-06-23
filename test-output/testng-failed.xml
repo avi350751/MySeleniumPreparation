@@ -6,6 +6,7 @@
       <class name="testng.TestNGDemo3">
         <methods>
           <include name="newtest3"/>
+          <include name="newtest1"/>
         </methods>
       </class> <!-- testng.TestNGDemo3 -->
     </classes>
