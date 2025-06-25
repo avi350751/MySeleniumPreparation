@@ -10,7 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utility {
 
@@ -106,5 +108,12 @@ public class Utility {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", driver.findElement(locator));
 		System.out.println("Clicked using JavascriptExecutor");
+	}
+	
+	public static WebElement waitForElementToAppear(WebDriver driver, By locator) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		return ele;
 	}
 }
