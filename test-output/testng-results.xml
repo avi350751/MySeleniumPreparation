@@ -1,91 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-24T22:02:24 CDT" name="Default suite" finished-at="2025-06-24T22:02:43 CDT" duration-ms="19195">
+  <suite started-at="2025-06-27T20:54:53 CDT" name="Suite" finished-at="2025-06-27T20:55:05 CDT" duration-ms="11375">
     <groups>
     </groups>
-    <test started-at="2025-06-24T22:02:24 CDT" name="Default test" finished-at="2025-06-24T22:02:43 CDT" duration-ms="19195">
-      <class name="testngWithSelenium.RegisterNewUser">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngWithSelenium.RegisterNewUser@34a3d150]" started-at="2025-06-24T22:02:24 CDT" name="setUp" finished-at="2025-06-24T22:02:26 CDT" duration-ms="1754" status="PASS">
+    <test started-at="2025-06-27T20:54:53 CDT" name="TestChrome" finished-at="2025-06-27T20:54:56 CDT" duration-ms="2373">
+      <class name="testngWithSelenium.DemoTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testngWithSelenium.DemoTest@692f203f]" started-at="2025-06-27T20:54:53 CDT" name="setUp" finished-at="2025-06-27T20:54:56 CDT" duration-ms="2261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerNewUserWithValidDetails()[pri:0, instance:testngWithSelenium.RegisterNewUser@34a3d150]" started-at="2025-06-24T22:02:26 CDT" name="registerNewUserWithValidDetails" finished-at="2025-06-24T22:02:43 CDT" duration-ms="17337" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='Toastify__toast-body']/div[2]"}
-  (Session info: chrome=137.0.7151.120)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c483472a3a1f4e6c3acf190fb1dbfaf0, findElement {value=//div[@class='Toastify__toast-body']/div[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /var/folders/3k/rlfmzz556wz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51537/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c483472a3a1f4e6c3acf190fb1dbfaf0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='Toastify__toast-body']/div[2]"}
-  (Session info: chrome=137.0.7151.120)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c483472a3a1f4e6c3acf190fb1dbfaf0, findElement {value=//div[@class='Toastify__toast-body']/div[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: /var/folders/3k/rlfmzz556wz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51537}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51537/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c483472a3a1f4e6c3acf190fb1dbfaf0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at testngWithSelenium.RegisterNewUser.registerNewUserWithValidDetails(RegisterNewUser.java:53)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyFooterLinks()[pri:0, instance:testngWithSelenium.DemoTest@692f203f]" started-at="2025-06-27T20:54:56 CDT" name="verifyFooterLinks" finished-at="2025-06-27T20:54:56 CDT" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerNewUserWithValidDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngWithSelenium.RegisterNewUser@34a3d150]" started-at="2025-06-24T22:02:43 CDT" name="tearDown" finished-at="2025-06-24T22:02:43 CDT" duration-ms="91" status="PASS">
+        </test-method> <!-- verifyFooterLinks -->
+        <test-method signature="verifyTitle()[pri:0, instance:testngWithSelenium.DemoTest@692f203f]" started-at="2025-06-27T20:54:56 CDT" name="verifyTitle" finished-at="2025-06-27T20:54:56 CDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifyURL()[pri:0, instance:testngWithSelenium.DemoTest@692f203f]" started-at="2025-06-27T20:54:56 CDT" name="verifyURL" finished-at="2025-06-27T20:54:56 CDT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngWithSelenium.DemoTest@692f203f]" started-at="2025-06-27T20:54:56 CDT" name="tearDown" finished-at="2025-06-27T20:54:56 CDT" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testngWithSelenium.RegisterNewUser -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testngWithSelenium.DemoTest -->
+    </test> <!-- TestChrome -->
+    <test started-at="2025-06-27T20:54:53 CDT" name="TestFirefox" finished-at="2025-06-27T20:54:57 CDT" duration-ms="3169">
+      <class name="testngWithSelenium.DemoTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testngWithSelenium.DemoTest@44c03695]" started-at="2025-06-27T20:54:53 CDT" name="setUp" finished-at="2025-06-27T20:54:56 CDT" duration-ms="2825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFooterLinks()[pri:0, instance:testngWithSelenium.DemoTest@44c03695]" started-at="2025-06-27T20:54:56 CDT" name="verifyFooterLinks" finished-at="2025-06-27T20:54:56 CDT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterLinks -->
+        <test-method signature="verifyTitle()[pri:0, instance:testngWithSelenium.DemoTest@44c03695]" started-at="2025-06-27T20:54:56 CDT" name="verifyTitle" finished-at="2025-06-27T20:54:56 CDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifyURL()[pri:0, instance:testngWithSelenium.DemoTest@44c03695]" started-at="2025-06-27T20:54:56 CDT" name="verifyURL" finished-at="2025-06-27T20:54:56 CDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngWithSelenium.DemoTest@44c03695]" started-at="2025-06-27T20:54:56 CDT" name="tearDown" finished-at="2025-06-27T20:54:57 CDT" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngWithSelenium.DemoTest -->
+    </test> <!-- TestFirefox -->
+    <test started-at="2025-06-27T20:54:53 CDT" name="TestSafari" finished-at="2025-06-27T20:55:05 CDT" duration-ms="11375">
+      <class name="testngWithSelenium.DemoTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testngWithSelenium.DemoTest@dd05255]" started-at="2025-06-27T20:54:53 CDT" name="setUp" finished-at="2025-06-27T20:54:55 CDT" duration-ms="1275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFooterLinks()[pri:0, instance:testngWithSelenium.DemoTest@dd05255]" started-at="2025-06-27T20:54:55 CDT" name="verifyFooterLinks" finished-at="2025-06-27T20:54:55 CDT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterLinks -->
+        <test-method signature="verifyTitle()[pri:0, instance:testngWithSelenium.DemoTest@dd05255]" started-at="2025-06-27T20:54:55 CDT" name="verifyTitle" finished-at="2025-06-27T20:54:55 CDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifyURL()[pri:0, instance:testngWithSelenium.DemoTest@dd05255]" started-at="2025-06-27T20:54:55 CDT" name="verifyURL" finished-at="2025-06-27T20:54:55 CDT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngWithSelenium.DemoTest@dd05255]" started-at="2025-06-27T20:54:55 CDT" name="tearDown" finished-at="2025-06-27T20:55:05 CDT" duration-ms="10073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngWithSelenium.DemoTest -->
+    </test> <!-- TestSafari -->
+  </suite> <!-- Suite -->
 </testng-results>
