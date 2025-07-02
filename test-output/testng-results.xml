@@ -2,74 +2,44 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-29T16:38:58 CDT" name="Default suite" finished-at="2025-06-29T16:38:59 CDT" duration-ms="1246">
+  <suite started-at="2025-07-02T13:11:21 CDT" name="Default suite" finished-at="2025-07-02T13:11:21 CDT" duration-ms="19">
     <groups>
     </groups>
-    <test started-at="2025-06-29T16:38:58 CDT" name="Default test" finished-at="2025-06-29T16:38:59 CDT" duration-ms="1246">
-      <class name="dataProviderInTestNG.DataDrivenTest2">
-        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dataProviderInTestNG.DataDrivenTest2@74235045]" started-at="2025-06-29T16:38:59 CDT" name="test1" data-provider="readexceldata" finished-at="2025-06-29T16:38:59 CDT" duration-ms="16" status="PASS">
+    <test started-at="2025-07-02T13:11:21 CDT" name="Default test" finished-at="2025-07-02T13:11:21 CDT" duration-ms="19">
+      <class name="dataProviderInTestNG.DataDrivenTest3">
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:dataProviderInTestNG.DataDrivenTest3@77847718]" started-at="2025-07-02T13:11:21 CDT" name="test1" data-provider="readexceldata" finished-at="2025-07-02T13:11:21 CDT" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Avishek]]>
+                <![CDATA[Ravi]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Bhattacharjee]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Selenium]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[AI]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[TCS]]>
+                <![CDATA[admin@123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dataProviderInTestNG.DataDrivenTest2@74235045]" started-at="2025-06-29T16:38:59 CDT" name="test1" data-provider="readexceldata" finished-at="2025-06-29T16:38:59 CDT" duration-ms="3" status="PASS">
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:dataProviderInTestNG.DataDrivenTest3@77847718]" started-at="2025-07-02T13:11:21 CDT" name="test1" data-provider="readexceldata" finished-at="2025-07-02T13:11:21 CDT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Hiya]]>
+                <![CDATA[Shivangi]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Sharma]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[MBA]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[DataScience]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Tiger Analytics]]>
+                <![CDATA[admin@234]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-      </class> <!-- dataProviderInTestNG.DataDrivenTest2 -->
+      </class> <!-- dataProviderInTestNG.DataDrivenTest3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

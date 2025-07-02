@@ -9,13 +9,13 @@ public class DataDrivenTest2 {
 	
 	
 	@Test(dataProvider="readexceldata")
-	public void test1(String args1, String args2, String args3, String args4, String args5) {
+	public void test1(String args1, String args2, String args3) {
 		
 		System.out.println("Hi! "+args1);
 		System.out.println("Hi! "+args2);
 		System.out.println("Hi! "+args3);
-		System.out.println("Hi! "+args4);
-		System.out.println("Hi! "+args5);
+//		System.out.println("Hi! "+args4);
+//		System.out.println("Hi! "+args5);
 		
 		System.out.println("*********************************");
 	}
@@ -23,7 +23,7 @@ public class DataDrivenTest2 {
 	@DataProvider(name="readexceldata")
 	public Object[][] getData(){
 		
-		Object [][] arr = ExcelUtility.getData("Sample1");
+		Object [][] arr = ExcelUtility.getData("ReadFromExcel","Sample4");
 		return arr;
 	}
 	

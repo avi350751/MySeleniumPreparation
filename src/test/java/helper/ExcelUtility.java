@@ -13,9 +13,9 @@ public class ExcelUtility {
 	
 	static XSSFWorkbook wb = null;
 	
-	public static Object[][] getData(String sheetName) {
+	public static Object[][] getData(String excelName, String sheetName) {
 		
-		File src = new File(System.getProperty("user.dir")+"//Testdata//Sample.xlsx");
+		File src = new File(System.getProperty("user.dir")+"//Testdata//"+excelName+".xlsx");
 		FileInputStream fis = null;
 		try{
 			fis = new FileInputStream(src);
