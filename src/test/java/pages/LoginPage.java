@@ -17,9 +17,12 @@ public class LoginPage {
 	By password = By.id("password1");
 	By signinButton = By.className("submit-btn");
 	
-	public void loginToApplication(String uname, String pass) {
+	public DashboardPage loginToApplication(String uname, String pass) {
 		driver.findElement(username).sendKeys(uname);
 		driver.findElement(password).sendKeys(pass);
 		driver.findElement(signinButton).click();
+		
+		DashboardPage dashboardpage = new DashboardPage(driver);
+		return dashboardpage;
 		}
 }
