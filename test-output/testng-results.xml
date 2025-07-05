@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-04T07:25:17 CDT" name="Default suite" finished-at="2025-07-04T07:25:23 CDT" duration-ms="5550">
+  <suite started-at="2025-07-05T09:57:22 CDT" name="Default suite" finished-at="2025-07-05T09:57:27 CDT" duration-ms="4716">
     <groups>
     </groups>
-    <test started-at="2025-07-04T07:25:17 CDT" name="Default test" finished-at="2025-07-04T07:25:23 CDT" duration-ms="5550">
-      <class name="testUsingPOM.LoginScenarios">
-        <test-method signature="testValidLogin()[pri:0, instance:testUsingPOM.LoginScenarios@77847718]" started-at="2025-07-04T07:25:17 CDT" name="testValidLogin" finished-at="2025-07-04T07:25:23 CDT" duration-ms="5540" status="PASS">
+    <test started-at="2025-07-05T09:57:22 CDT" name="Default test" finished-at="2025-07-05T09:57:27 CDT" duration-ms="4716">
+      <class name="testUsingPOM.LoginScenariosWithPageFactory">
+        <test-method signature="testValidLogin()[pri:0, instance:testUsingPOM.LoginScenariosWithPageFactory@7f0eb4b4]" started-at="2025-07-05T09:57:22 CDT" name="testValidLogin" finished-at="2025-07-05T09:57:27 CDT" duration-ms="4705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-      </class> <!-- testUsingPOM.LoginScenarios -->
+      </class> <!-- testUsingPOM.LoginScenariosWithPageFactory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

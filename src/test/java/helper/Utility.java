@@ -94,7 +94,8 @@ public class Utility {
 	public static void clickElement(WebDriver driver, By locator) {
 		
 		try{
-			driver.findElement(locator).click();
+			//driver.findElement(locator).click();
+			Utility.clickElement(driver, locator);
 			System.out.println("Clicked - conventional method");
 		}
 		catch(Exception e) {
@@ -103,11 +104,23 @@ public class Utility {
 		}
 	}
 	
+	public static WebElement checkElement(WebDriver driver, By locator) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement ele = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		return ele;
+	}
+	
 	public static void clickElementJS(WebDriver driver, By locator) {
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", driver.findElement(locator));
 		System.out.println("Clicked using JavascriptExecutor");
+	}
+	
+	public static void typeOnElement(WebDriver driver, By locator, String textToType) {
+		
+		Utility.checkElement(driver, locator).sendKeys(textToType);
 	}
 	
 	public static WebElement waitForElementToAppear(WebDriver driver, By locator) {
